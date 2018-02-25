@@ -37,7 +37,6 @@ public abstract class RetrofitApiClient<S> extends BaseApiClient<S, OkHttpClient
         okHttpBuilder.addInterceptor(getHeaderInterceptor());
         okHttpBuilder.readTimeout(getReadTimeout(), TimeUnit.SECONDS);
         okHttpBuilder.connectTimeout(getConnectTimeout(), TimeUnit.SECONDS);
-        okHttpBuilder.certificatePinner();
 
         HttpLoggingInterceptor httpLogInterceptor = new HttpLoggingInterceptor();
         httpLogInterceptor.setLevel(getLoggingLevel());

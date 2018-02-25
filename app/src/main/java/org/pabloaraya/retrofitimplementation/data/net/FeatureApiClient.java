@@ -20,7 +20,7 @@ public class FeatureApiClient extends RetrofitApiClient<FeatureApiService> imple
 
     @Override
     protected String getBaseURL() {
-        return "asdfasdf";
+        return "http://pabloaraya.org/api/v1/feature";
     }
 
     @Override
